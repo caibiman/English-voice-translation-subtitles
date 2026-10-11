@@ -1,0 +1,24 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+
+# 密钥与本地敏感配置
+.env
+*.key
+
+# 日志
+logs/*
+!logs/.gitkeep
+
+# 模型缓存与临时音频
+models/
+*.wav
+*.pcm
+*.mp3
+
+# IDE
+.idea/
+.vscode/

@@ -1,0 +1,17 @@
+# SenseVoice ASR（funasr 依赖 torch/torchaudio，请按需安装 CPU 或 CUDA 版本）
+funasr>=1.1.4
+torch>=2.1.0
+torchaudio>=2.1.0
+
+# 音频采集：Windows 推荐 pyaudiowpatch（支持 WASAPI 回环采集虚拟声卡/扬声器）
+pyaudiowpatch>=0.2.12.6 ; platform_system == "Windows"
+pyaudio>=0.2.13 ; platform_system != "Windows"
+
+# LLM（OpenAI协议兼容：DeepSeek / 通义千问等）
+openai>=1.30.0
+
+# PyQt6 桌面UI（main_ui.py）
+PyQt6>=6.6.0
+
+# 数值处理
+numpy
